@@ -1,2 +1,6 @@
-# homebrew-taps
-homebrew taps created by ygrebnov.
+# homebrew-tap
+Homebrew Formulae to @ygrebnov binaries.
+
+```shell
+brew tap ygrebnov/tap
+```
