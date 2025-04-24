@@ -5,21 +5,21 @@
 class Links < Formula
   desc "A Go-based tool for checking pages links statuses at the given host."
   homepage "https://github.com/ygrebnov/links"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ygrebnov/links/releases/download/v0.0.1/links_Darwin_x86_64.tar.gz"
-      sha256 "0834128798a7da7c6050c9c9b372270ee6c883621e0a46865ffdd55e2e73eb8b"
+      url "https://github.com/ygrebnov/links/releases/download/v0.0.2/links_Darwin_x86_64.tar.gz"
+      sha256 "a4bdbc8bb85a88a4aa8bb597eda9ce2c4006a439a576fbc23f284f08324eaa5d"
 
       def install
         bin.install "links"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ygrebnov/links/releases/download/v0.0.1/links_Darwin_arm64.tar.gz"
-      sha256 "8ec5d048719b4b28747d33d29294921e71926039ac8498cdca4324b1c08871f4"
+      url "https://github.com/ygrebnov/links/releases/download/v0.0.2/links_Darwin_arm64.tar.gz"
+      sha256 "767998cfc19b644536e87632f65d14ff9ae49bb42a01d9cc41b20b1724b05433"
 
       def install
         bin.install "links"
@@ -30,8 +30,8 @@ class Links < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ygrebnov/links/releases/download/v0.0.1/links_Linux_x86_64.tar.gz"
-        sha256 "6b6d1c9dfbe7e89b2443ec7dcbe0d3c54cb8e3f0cd2fb46d6fc8bd1969b1c8d5"
+        url "https://github.com/ygrebnov/links/releases/download/v0.0.2/links_Linux_x86_64.tar.gz"
+        sha256 "f955155919cca79f0154478bfcbbb75531e78e4fab48fe2342ea082a8b82cc67"
 
         def install
           bin.install "links"
@@ -40,8 +40,8 @@ class Links < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ygrebnov/links/releases/download/v0.0.1/links_Linux_arm64.tar.gz"
-        sha256 "16377deea87042da599601cbae1066af48c9566cc2c48d812f33f52c505a8a89"
+        url "https://github.com/ygrebnov/links/releases/download/v0.0.2/links_Linux_arm64.tar.gz"
+        sha256 "bfa5d8ff8a551cab3e989b51480657afa180ae2e52061a83df3dec0210e64499"
 
         def install
           bin.install "links"
